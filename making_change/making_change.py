@@ -4,6 +4,9 @@ import sys
 
 def making_change(amount, denominations):
   # Your code here
+  #if we are making change for 10 cents, we could give them a penny, which would take off 9 cents, we can give dimes, or nickles
+  # we're doing n-1 or n-5 or n-10, etc instead of cookie scenario
+  
 
   pass
 
