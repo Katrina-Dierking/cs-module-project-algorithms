@@ -4,8 +4,26 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
+    end = len(arr) -1
     
-    pass
+    for i in range(len(arr)):
+        if i >= end:
+            return arr
+        
+        if arr[i] == 0:
+            while (arr[end] == 0) and (end > 1):
+                end -= 1
+                
+            if i == end:
+                return arr
+            
+            else:
+                #swap
+                arr[i], arr[end] = arr[end], arr[i]
+                end -= 1
+                
+    return arr
+    
 
 
 if __name__ == '__main__':
